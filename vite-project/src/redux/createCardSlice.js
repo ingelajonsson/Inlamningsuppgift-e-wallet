@@ -20,7 +20,7 @@ export const createCardSlice = createSlice({
             {
                 firstName: "",
                 lastName: "",
-                cardNumber: "1234 5678 9012 3456",
+                cardNumber: "1234567890123456",
                 cvv: "123",
                 validMonth: "12",
                 validYear: "24",

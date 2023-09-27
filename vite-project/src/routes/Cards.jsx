@@ -14,11 +14,13 @@ export const Cards = () => {
           return (
             <>
               <div key={card.id} className="card">
-                <p>{card.vendor}</p>
                 <p>{card.cardNumber}</p>
                 <p>{card.firstName.toUpperCase()} {card.lastName.toUpperCase()}</p>
-                <p>{card.validMonth}/{card.validYear}</p>
-                <p>{card.cvv}</p>
+                <div className="wrapper-valid-cvv-vendor">
+                  <p>{card.validMonth}/{card.validYear}</p>
+                  <p>{card.cvv}</p>
+                  <p>{card.vendor}</p>
+                </div>
               </div>
             </>
           )
